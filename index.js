@@ -84,16 +84,15 @@ console.log(adam.toString());
 function Car(model, milesPerGallon) {
   this.model = model;
   this.milesPerGallon = milesPerGallon;
-  this.tank = 0;
   this.odometer = 0;
-  this.gallons = 0;
+  this.tank = 0;
 }
-Car.prototype.fill = function(){
-  this.tank = this.gallons[5];
+Car.prototype.fill = function(gallons){
+  this.tank = this.tank + gallons;
 }
 const civic = new Car('Civic', 32)
 
-console.log(civic.fill[5])
+
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
