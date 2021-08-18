@@ -64,7 +64,7 @@ const adam = new Person('Adam', 20);
 console.log(cam.toString());
 console.log(adam.toString());
 
-
+//beanza
 
 
 /*
